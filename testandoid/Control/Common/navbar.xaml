@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="testandoid.Control.Common.navbar">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="Black" WidthRequest="100" HeightRequest="100">
+            <StackLayout >
+                <Frame  BackgroundColor="White" VerticalOptions="Center" Margin="50,300,50,0" CornerRadius="30"  >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Label  VerticalOptions="Center" HorizontalOptions="Center"  Text="Username" Grid.Row="0" Grid.Column="0" TextColor="Black" />
+                        <Entry  VerticalOptions="Center" HorizontalOptions="Center" Placeholder="Username"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+                        <Label Text="Password" Grid.Row="1" Grid.Column="0" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Entry Placeholder="Password"  Grid.Row="1" Grid.Column="1" TextColor="Black"  VerticalOptions="Center" HorizontalOptions="Center" Grid.ColumnSpan="2" />
+                        <Button Text="Submit"  BackgroundColor="Aqua" Grid.Row="2" Clicked="Button_Clicked"/>
+                        <Label Text="Forgot Password?"  Grid.Row="2" Grid.Column="2" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>
